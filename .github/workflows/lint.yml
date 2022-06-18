@@ -3,7 +3,8 @@ name: Lint
 on:
   push:
     paths:
-      - '*.py'
+      - 'ADFA/*.py'
+      - 'test/*.py'
 
 jobs:
   mypy:
