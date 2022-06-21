@@ -21,8 +21,10 @@ jobs:
           architecture: x64
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install mypy
-        run: pip install mypy
+      - name: Install
+        run: |
+          pip install mypy pytest
+          pip install -r requirements.txt
       - name: Run mypy
         uses: sasanquaneuf/mypy-github-action@releases/v1
         with:
