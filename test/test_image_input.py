@@ -15,7 +15,8 @@ from ADFA.gradio_interface import GradioInterface
 
 ID = 0
 
-def test_image_interface_exist(id: int=ID):
+
+def test_image_interface_exist(id: int = ID):
 
     """This function test if image interface instantiated
 

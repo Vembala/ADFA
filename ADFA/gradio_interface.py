@@ -1,7 +1,9 @@
 import gradio
 
+
 def predict(image):
     return image
+
 
 inputs = ["image"]
 outputs = ["video"]
