@@ -16,7 +16,7 @@ from ADFA.gradio_interface import GradioInterface
 ID = 0
 
 
-def test_image_interface_exist(id: int = ID):
+def test_image_interface_exist(idx: int = ID):
 
     """This function test if image interface instantiated
 
@@ -29,4 +29,4 @@ def test_image_interface_exist(id: int = ID):
     Returns
     """
 
-    assert type(GradioInterface.input_components[ID]) == gradio.Image
+    assert type(GradioInterface.input_components[idx]) == gradio.Image
