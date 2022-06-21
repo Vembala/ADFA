@@ -9,8 +9,8 @@ Attributes:
 """
 
 import gradio
-
 import pytest
+
 from ADFA.gradio_interface import GradioInterface
 
 ID = 0
