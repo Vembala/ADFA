@@ -1,1 +1,2 @@
 wheels/sda-0.2-py3-none-any.whl
+gradio==3.0.19
