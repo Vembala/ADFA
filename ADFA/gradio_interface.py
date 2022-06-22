@@ -1,5 +1,7 @@
 import gradio
 
+animator = None
+
 
 def predict(image):
     return image
