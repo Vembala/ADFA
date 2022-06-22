@@ -15,7 +15,7 @@ def pass_(url=URL, destination=MODEL_PATH):
 
 choices = {True: download, False: pass_}
 model_exist = os.path.exist(MODEL_PATH)
-downloade_function = choices[model_exist]
+download_function = choices[model_exist]
 
 download_function(url=URL, model_path=MODEL_PATH)
 
