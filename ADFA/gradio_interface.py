@@ -1,7 +1,9 @@
 import gradio
 import sda
 
-animator = sda.VideoAnimator()
+MODEL_PATH = "ADFA/models/grid.dat"
+
+animator = sda.VideoAnimator(model_path=MODEL_PATH)
 
 
 def predict(image):
