@@ -17,7 +17,7 @@ choices = {True: download, False: pass_}
 model_exist = os.path.exists(MODEL_PATH)
 download_function = choices[model_exist]
 
-download_function(url=URL, model_path=MODEL_PATH)
+download_function(url=URL, destination=MODEL_PATH)
 
 animator = sda.VideoAnimator(model_path=MODEL_PATH)
 
