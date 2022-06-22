@@ -4,7 +4,7 @@ import gdown
 import gradio
 import sda
 
-URL = "https://drive.google.com/file/d/1f8bjoQgDgimmuUoNyoD5wOWj3NSK719w/view?usp=sharing"
+URL = "https://drive.google.com/uc?id=1f8bjoQgDgimmuUoNyoD5wOWj3NSK719w"
 MODEL_PATH = "ADFA/models/grid.dat"
 
 def download(url=URL, destination=MODEL_PATH):
