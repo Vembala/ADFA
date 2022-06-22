@@ -1,6 +1,7 @@
 import gradio
+import sda
 
-animator = None
+animator = sda.VideoAnimator()
 
 
 def predict(image):
