@@ -7,11 +7,14 @@ import sda
 URL = "https://drive.google.com/uc?id=1f8bjoQgDgimmuUoNyoD5wOWj3NSK719w"
 MODEL_PATH = "ADFA/models/grid.dat"
 
+
 def download(url=URL, destination=MODEL_PATH):
     gdown.download(url, destination)
 
+
 def pass_(url=URL, destination=MODEL_PATH):
     pass
+
 
 choices = {True: pass_, False: download}
 model_exist = os.path.exists(MODEL_PATH)
