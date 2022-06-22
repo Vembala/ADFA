@@ -1,7 +1,23 @@
+import os
+
+import gdown
 import gradio
 import sda
 
+URL = "https://drive.google.com/file/d/1f8bjoQgDgimmuUoNyoD5wOWj3NSK719w/view?usp=sharing"
 MODEL_PATH = "ADFA/models/grid.dat"
+
+def download(url=URL, destination=MODEL_PATH):
+    gdown.download(url, destination)
+
+def pass_(url=URL, destination=MODEL_PATH):
+    pass
+
+choices = {True: download, False: pass_}
+model_exist = os.path.exist(MODEL_PATH)
+downloade_function = choices[model_exist]
+
+download_function(url=URL, model_path=MODEL_PATH)
 
 animator = sda.VideoAnimator(model_path=MODEL_PATH)
 
