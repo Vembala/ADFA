@@ -5,7 +5,7 @@ def predict(image):
     return image
 
 
-inputs = ["image", gradio.Audio(source="microphone")]
+inputs = [gradio.Image(type="filepath"), gradio.Audio(source="microphone")]
 outputs = ["video"]
 
 GradioInterface = gradio.Interface(predict, inputs, outputs)
