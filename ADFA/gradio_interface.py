@@ -13,7 +13,7 @@ def download(url=URL, destination=MODEL_PATH):
 def pass_(url=URL, destination=MODEL_PATH):
     pass
 
-choices = {True: download, False: pass_}
+choices = {True: pass_, False: download}
 model_exist = os.path.exists(MODEL_PATH)
 download_function = choices[model_exist]
 
