@@ -14,5 +14,5 @@ remove = choices[os.path.exists(WRITE_PATH)]
 remove(WRITE_PATH)
 
 def test_predict(image_path: str = IMAGE_PATH, audio_path: str = AUDIO_PATH):
-    ret_path = predict(image_path=image_path, audio_path=audio_path)
+    ret_path = predict(image_path=image_path, audio_path=audio_path, path=WRITE_PATH)
     assert os.path.exists(WRITE_PATH)
