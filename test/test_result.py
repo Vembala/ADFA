@@ -1,4 +1,5 @@
 import os
+import typing
 
 from ADFA.gradio_interface import predict
 
@@ -6,6 +7,7 @@ IMAGE_PATH = "test/image.jpeg"
 AUDIO_PATH = "test/example_audio.wav"
 WRITE_PATH = "test/result.mp4"
 
+remove: typing.Callable
 
 def remove_(path: str) -> None:
     return None
