@@ -28,7 +28,7 @@ animator = sda.VideoAnimator(model_path=MODEL_PATH)
 
 def predict(
     image_path: str, audio_path: str, animator=animator, path: str = OUTPUT_PATH
-):
+) -> str:
     vid, aud = animator(image_path, audio_path)
     animator.save_video(vid, aud, path)
     return path
