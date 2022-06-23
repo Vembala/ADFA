@@ -25,7 +25,7 @@ download_function(url=URL, destination=MODEL_PATH)
 animator = sda.VideoAnimator(model_path=MODEL_PATH)
 
 
-def predict(image_path: str):
+def predict(image_path: str, audio_path: str):
     pass
 
 inputs = [
