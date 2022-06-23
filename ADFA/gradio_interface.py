@@ -26,8 +26,7 @@ animator = sda.VideoAnimator(model_path=MODEL_PATH)
 
 
 def predict(image_path: str):
-    return image
-
+    pass
 
 inputs = [
     gradio.Image(type="filepath"),
