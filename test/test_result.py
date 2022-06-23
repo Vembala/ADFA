@@ -9,4 +9,4 @@ os.remove(WRITE_PATH)
 
 def test_predict(image_path: str, audio_path: str):
     ret_path = predict(image_path=image_path, audio_path=audio_path)
-    assert os.path.exists(result.mp4)
+    assert os.path.exists(WRITE_PATH)
