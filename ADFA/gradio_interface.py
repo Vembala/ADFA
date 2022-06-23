@@ -31,6 +31,7 @@ def predict(
 ):
     vid, aud = animator(image_path, audio_path)
     animator.save_video(vid, aud, path)
+    return path
 
 
 inputs = [
