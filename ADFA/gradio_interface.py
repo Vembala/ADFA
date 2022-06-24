@@ -1,5 +1,3 @@
-import os
-
 import gradio
 
 def predict() -> None:
