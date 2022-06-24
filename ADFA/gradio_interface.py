@@ -2,9 +2,7 @@ import os
 
 import gradio
 
-def predict(
-    image_path: str, audio_path: str,
-) -> str:
+def predict() -> None:
     
     return None
 
