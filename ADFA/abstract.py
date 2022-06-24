@@ -10,5 +10,5 @@ class AnimatorAbstract(abc.ABC):
         pass
 
     @abc.abstractmethod
-    def dummy_method():
+    def dummy_method(self,):
         pass
