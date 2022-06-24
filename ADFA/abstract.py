@@ -1,3 +1,3 @@
 import typing
 
-AnimatorAbstract: typing.Any
+AnimatorAbstract: typing.Any = None
