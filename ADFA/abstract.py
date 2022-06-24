@@ -3,8 +3,8 @@ import typing
 
 AnimatorAbstract: typing.Any = None
 
-class AnimatorAbstract(abc.ABC):
 
+class AnimatorAbstract(abc.ABC):
     def __init__(self):
 
         pass
@@ -12,4 +12,3 @@ class AnimatorAbstract(abc.ABC):
     @abc.abstractmethod
     def dummy_method():
         pass
-    
