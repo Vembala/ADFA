@@ -1,7 +1,8 @@
 import gradio
 
+
 def predict() -> None:
-    
+
     return None
 
 
