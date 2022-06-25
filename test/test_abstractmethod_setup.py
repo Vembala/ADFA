@@ -5,6 +5,6 @@ from ADFA.abstract import AnimatorAbstract
 
 PARAMETERS = [(AnimatorAbstract, ['setup'])]
 
-@pytest.mark.parameterize("abstract, name", PARAMETERS)
+@pytest.mark.parametrize("abstract, name", PARAMETERS)
 def test_setup_exist(abstract: typing.Type[AnimatorAbstract], names: str):
     assert sorted(names) == sorted(list(AnimatorAbstract.__abstractmethods__))
