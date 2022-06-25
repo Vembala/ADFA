@@ -4,7 +4,7 @@ import abc
 class AnimatorAbstract(abc.ABC):
     def __init__(self):
 
-        pass
+        self.setup = None
 
     @abc.abstractmethod
     def dummy_method(
