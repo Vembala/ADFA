@@ -5,7 +5,7 @@ import pytest
 
 from ADFA.abstract import AnimatorAbstract
 
-PARAMETERS = [(AnimatorAbstract, ["setup"])]
+PARAMETERS = [(AnimatorAbstract, ["setup", "predict"])]
 
 
 @pytest.mark.parametrize("abstract, names", PARAMETERS)
