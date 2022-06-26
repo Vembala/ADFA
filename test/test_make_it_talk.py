@@ -1,10 +1,10 @@
-from pytest.mark import parametrize
+import pytest
 from typing import Any
 from ADFA.makeittalk import MakeItTalk
 from ADFA.abstract import AnimatorAbstract
 
 PAIRS = [(MakeItTalk, AnimatorAbstract)]
 
-@parametrize("child, parent", PAIRS)
+@pytest.mark.parametrize("child, parent", PAIRS)
 def test_issubclass(child: Any, parent: Any):
     assert issubclass(child, parent)
