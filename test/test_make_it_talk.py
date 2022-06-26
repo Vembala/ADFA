@@ -1,4 +1,3 @@
-from inspect import issubclass
 from pytest.mark import parametrize
 from typing import Any
 from ADFA.makeittalk import MakeItTalk
