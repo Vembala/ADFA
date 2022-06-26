@@ -13,5 +13,7 @@ class AnimatorAbstract(abc.ABC):
         pass
 
     @abc.abstractmethod
-    def predict(self,):
+    def predict(
+        self,
+    ):
         pass
