@@ -9,6 +9,6 @@ from ADFA.makeittalk import MakeItTalk
 PARAMETERS = [(AnimatorAbstract, ["setup", "predict"]), (MakeItTalk, list(AnimatorAbstract.__abstractmethods__))]
 
 
-@pytest.mark.parametrize("abstract, names", PARAMETERS)
+@pytest.mark.parametrize("aclass, names", PARAMETERS)
 def test_setup_exist(aclass: typing.Type[AnimatorAbstract], names: str):
     assert sorted(names) == sorted(list(aclass.__abstractmethods__))
