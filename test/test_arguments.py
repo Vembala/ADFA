@@ -6,6 +6,6 @@ import ADFA
 
 PAIRS = [(ADFA.abstract.AnimatorAbstract.setup, ['argdict']),]
 
-@pytest.mark.parametrize("function, arguments", )
+@pytest.mark.parametrize("function, arguments", PAIRS)
 def test_arguments(function: typing.Callable, arguments: typing.List):
     assert sorted(arguments) == sorted(list(inspect.signature(function).parameters))
