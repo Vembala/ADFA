@@ -8,12 +8,12 @@ class AnimatorAbstract(abc.ABC):
 
     @abc.abstractmethod
     def setup(
-        self,
+        self, argdict
     ):
         pass
 
     @abc.abstractmethod
     def predict(
-        self, argdict
+        self,
     ):
         pass
