@@ -7,9 +7,7 @@ class AnimatorAbstract(abc.ABC):
         self.setup = None
 
     @abc.abstractmethod
-    def setup(
-        self, argdict
-    ):
+    def setup(self, argdict):
         pass
 
     @abc.abstractmethod
