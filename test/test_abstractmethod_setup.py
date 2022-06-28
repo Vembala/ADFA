@@ -6,7 +6,9 @@ import pytest
 from ADFA.abstract import AnimatorAbstract
 from ADFA.makeittalk import MakeItTalk
 
-PARAMETERS = [(AnimatorAbstract, ["setup", "predict"]),]
+PARAMETERS = [
+    (AnimatorAbstract, ["setup", "predict"]),
+]
 
 
 @pytest.mark.parametrize("aclass, names", PARAMETERS)
